@@ -39,3 +39,64 @@
 .nav-link:active {
     color: #5170ff !important;
 }
+
+section {
+    width: 100%;
+    display: flex;
+    margin-top: 55px;
+}
+
+section .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume {
+    color: #5170ff;
+    background-color: rgb(236, 236, 236);
+    transition: .3s ease;
+}
+
+.resume:hover {
+    color: #ffffff;
+    background-color: #5170ff;
+}
+
+.social-item {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(236, 236, 236);
+    color: #5170ff;
+    transition: .3s ease;
+}
+
+.social-item:hover {
+    color: #ffffff;
+    background-color: #5170ff;
+}
+
+.col-4 {
+    cursor: pointer;
+}
+
+.col-4:hover .accent-1 {
+    transform: translateX(80px);
+    transition: .3s ease;
+}
+
+.col-4:hover .img-fluid {
+    transform: scale(1.1);
+    transition: .3s ease;
+}
+
+.img-fluid {
+    z-index: 10;
+}
+
+.accent-1 {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    z-index: 5;
+}
