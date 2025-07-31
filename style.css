@@ -42,8 +42,8 @@
 
 section {
     width: 100%;
-    display: flex;
-    margin-top: 55px;
+    height: 100vh;
+    padding-top: 120px;
 }
 
 section .row {
@@ -99,4 +99,47 @@ section .row {
     top: 0;
     width: 200px;
     z-index: 5;
+}
+
+.about-header h1 {
+    z-index: 5;
+}
+
+.about-header img {
+    width: 50px;
+    z-index: 4;
+}
+
+.about-exp-item {
+    width: 40%;
+    background-color: rgb(236, 236, 236);
+}
+
+.about-exp-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-exp-item-detail {
+    display: none;
+}
+
+.btn-detail-exp {
+    background-color: #5170ff;
+    color: rgb(236, 236, 236);
+    border: 2px solid #5170ff;
+    transition: .3s ease;
+}
+
+.btn-detail-exp:hover {
+    background-color: rgb(236, 236, 236);
+    color: #5170ff;
+    border: 2px solid #5170ff;
+}
+
+.detail-active {
+    background-color: #5170ff;
+    color: #ffffff;
+    border: 2px solid #5170ff;
 }
