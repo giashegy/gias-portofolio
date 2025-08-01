@@ -101,13 +101,27 @@ section .row {
     z-index: 5;
 }
 
+#about {
+    padding-top: 90px;
+}
+
+#about p {
+    text-align: justify;
+}
+
 .about-header h1 {
+    cursor: pointer;
     z-index: 5;
+}
+
+.about-header h1:hover~img {
+    transform: translateX(100px);
 }
 
 .about-header img {
     width: 50px;
     z-index: 4;
+    transition: .3s ease;
 }
 
 .about-exp-item {
@@ -142,4 +156,81 @@ section .row {
     background-color: #5170ff;
     color: #ffffff;
     border: 2px solid #5170ff;
+}
+
+#project {
+    padding-top: 90px;
+}
+
+.project-header h1 {
+    cursor: pointer;
+}
+
+.project-header h1:before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 5px;
+    bottom: -10px;
+    border-radius: 5px;
+    background-color: #5170ff;
+    transition: .3s all;
+}
+
+.project-header h1:hover::before {
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0px 0px 5px 0px rgba(152, 152, 152, 0.75);
+    position: relative;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.card::after {
+    transition: 1s all;
+}
+
+.card:hover::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: justify;
+    color: #ffffff;
+    padding: 15px;
+    transition: 1s all;
+}
+
+#project-1:hover::after {
+    content: "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.";
+    transition: 1s all;
+}
+
+#project-2:hover::after {
+    content: "UI/UX design is the process of enhancing user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction between the user and the product. It involves creating interfaces that are easy to use and aesthetically pleasing.";
+    transition: 1s all;
+}
+
+#project-3:hover::after {
+    content: "System analysis is the process of studying a system to identify its components and their relationships. It involves understanding how a system works, identifying problems, and proposing solutions to improve its efficiency and effectiveness.";
+    transition: 1s all;
+}
+
+.icon-card {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: #5170ff;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0px 1px 3px 0px rgba(152, 152, 152, 0.75);
+    z-index: 5;
 }

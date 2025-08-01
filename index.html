@@ -35,7 +35,7 @@
                             <a class="nav-link fw-semibold" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-semibold" href="#work">Work</a>
+                            <a class="nav-link fw-semibold" href="#project">Project</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-semibold" href="#contact">Contact</a>
@@ -84,14 +84,15 @@
         <p>Hello, I'm an Information Systems student. I'm very interested in programming. I have several certifications,
             including Computer Engineering, Data Visualization, Basic Artificial Intelligence, Basic Python Programming,
             and Web Development.</p>
-        <div class="about-exp d-flex flex-wrap justify-content-evenly align-items-center gap-4 p-3">
+        <div class="about-exp d-flex flex-wrap justify-content-evenly align-items-start gap-4 p-3">
             <div class="about-exp-item py-3 px-4 rounded">
                 <div class="about-exp-item-header">
                     <div>
                         <h5>Computer Engineering</h5>
                         <p>PPKD Jakarta Selatan (2022 - 2025)</p>
                     </div>
-                    <button type="button" class="btn-detail-exp rounded py-1 px-2 fw-semibold" onclick="toggleDetail(event)">More Info</button>
+                    <button type="button" class="btn-detail-exp rounded py-1 px-2 fw-semibold"
+                        onclick="toggleDetail(event)">More Info</button>
                 </div>
                 <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
                     ex ab. Fugit minus necessitatibus
@@ -106,7 +107,8 @@
                         <h5>Data Visualization</h5>
                         <p>Dicoding (2024 - 2027)</p>
                     </div>
-                    <button type="button" class="btn-detail-exp rounded py-1 px-2 fw-semibold" onclick="toggleDetail(event)">More Info</button>
+                    <button type="button" class="btn-detail-exp rounded py-1 px-2 fw-semibold"
+                        onclick="toggleDetail(event)">More Info</button>
                 </div>
                 <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
                     ex ab. Fugit minus necessitatibus
@@ -121,7 +123,8 @@
                         <h5>Basic Artificial Intelligence</h5>
                         <p>Dicoding (2024 - 2027)</p>
                     </div>
-                    <button type="button" class="btn-detail-exp rounded py-1 px-2 fw-semibold" onclick="toggleDetail(event)">More Info</button>
+                    <button type="button" class="btn-detail-exp rounded py-1 px-2 fw-semibold"
+                        onclick="toggleDetail(event)">More Info</button>
                 </div>
                 <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
                     ex ab. Fugit minus necessitatibus
@@ -136,7 +139,8 @@
                         <h5>Basic Python Programming</h5>
                         <p>Dicoding (2024 - 2027)</p>
                     </div>
-                    <button type="button" class="btn-detail-exp rounded py-1 px-2 fw-semibold" onclick="toggleDetail(event)">More Info</button>
+                    <button type="button" class="btn-detail-exp rounded py-1 px-2 fw-semibold"
+                        onclick="toggleDetail(event)">More Info</button>
                 </div>
                 <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
                     ex ab. Fugit minus necessitatibus
@@ -151,7 +155,8 @@
                         <h5>Web Development</h5>
                         <p>Coding Studio (2025 - Now)</p>
                     </div>
-                    <button type="button" class="btn-detail-exp rounded py-1 px-2 fw-semibold" onclick="toggleDetail(event)">More Info</button>
+                    <button type="button" class="btn-detail-exp rounded py-1 px-2 fw-semibold"
+                        onclick="toggleDetail(event)">More Info</button>
                 </div>
                 <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
                     ex ab. Fugit minus necessitatibus
@@ -159,6 +164,41 @@
                     voluptates veniam modi dicta quidem nobis aliquid quasi suscipit ab? At voluptatibus impedit
                     architecto.</p>
 
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="project container">
+        <div class="project-header d-flex justify-content-center align-items-center mb-5">
+            <h1 class="position-relative d-flex justify-content-center">Project</h1>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <div id="project-1" class="card position-relative mt-3" style="width: 25%;">
+                <div class="icon-card position-absolute d-flex justify-content-center align-items-center rounded">
+                    <ion-icon name="globe-outline"></ion-icon>
+                </div>
+                <img src="images/web-dev.png" class="card-img-top" alt="web-dev">
+                <div class="card-body">
+                    <h5 class="card-title text-center m-0">Web Development</h5>
+                </div>
+            </div>
+            <div id="project-2" class="card position-relative mt-3" style="width: 25%;">
+                <div class="icon-card position-absolute d-flex justify-content-center align-items-center rounded">
+                    <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+                <img src="images/ui-ux.png" class="card-img-top" alt="web-dev">
+                <div class="card-body">
+                    <h5 class="card-title text-center m-0">UI/UX Design</h5>
+                </div>
+            </div>
+            <div id="project-3" class="card position-relative mt-3" style="width: 25%;">
+                <div class="icon-card position-absolute d-flex justify-content-center align-items-center rounded">
+                    <ion-icon name="analytics-outline"></ion-icon>
+                </div>
+                <img src="images/system-analys.png" class="card-img-top" alt="web-dev">
+                <div class="card-body">
+                    <h5 class="card-title text-center m-0">System Analys</h5>
+                </div>
             </div>
         </div>
     </section>
