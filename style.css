@@ -234,3 +234,59 @@ section .row {
     box-shadow: 0px 1px 3px 0px rgba(152, 152, 152, 0.75);
     z-index: 5;
 }
+
+#contact {
+    padding-top: 90px;
+    margin-bottom: 100px;
+}
+
+.contact-header {
+    cursor: pointer;
+}
+
+.contact-header h1 {
+    z-index: 5;
+}
+
+.contact-header h1:hover ~ img {
+    transform: scale(1.2);
+}
+
+.contact-header img {
+    width: 100px;
+    transition: .3s ease;
+    z-index: 4;
+}
+
+.text-contact {
+    text-align: justify;
+}
+
+.contact-item {
+    background-color: rgb(236, 236, 236);
+    color: #5170ff;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.contact-item:hover {
+    color: #ffffff;
+    background-color: #5170ff;
+}
+
+.form-contact {
+    box-shadow: 0px 0px 5px 0px rgba(152, 152, 152, 0.75);
+}
+
+.form-contact .button {
+    width: 100%;
+    font-weight: 600;
+    background-color: rgb(236, 236, 236);
+    color: #5170ff;
+    transition: .3s ease;
+}
+
+.form-contact .button:hover {
+    background-color: #5170ff;
+    color: #ffffff;
+}
