@@ -85,12 +85,13 @@ section .row {
     transition: .3s ease;
 }
 
-.col-4:hover .img-fluid {
+.col-4:hover .img-home {
     transform: scale(1.1);
     transition: .3s ease;
 }
 
-.img-fluid {
+.img-home {
+    width: 350px;
     z-index: 10;
 }
 
@@ -122,6 +123,10 @@ section .row {
     width: 50px;
     z-index: 4;
     transition: .3s ease;
+}
+
+.about-exp {
+    gap: 1.5rem;
 }
 
 .about-exp-item {
@@ -182,6 +187,7 @@ section .row {
 }
 
 .card {
+    width: 25%;
     box-shadow: 0px 0px 5px 0px rgba(152, 152, 152, 0.75);
     position: relative;
     transition: 1s all;
@@ -289,4 +295,123 @@ section .row {
 .form-contact .button:hover {
     background-color: #5170ff;
     color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+    #about {
+        margin-bottom: 80px;
+    }
+
+    .card {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #about {
+        margin-bottom: 100px;
+    }
+
+    .about-exp {
+        gap: 1rem;
+    }
+
+    .about-exp-item {
+        width: 48%;
+    }
+
+    #project {
+        margin-bottom: 360px;
+    }
+
+    .card {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home {
+        padding-top: 80px;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    #home .row {
+        gap: 30px;
+    }
+
+    #home .row .col-8 {
+        position: relative;
+    }
+
+    #home .row .col-8 .social .social-item {
+        position: absolute;
+        bottom: 66px;
+    }
+
+    #home .row .col-8 .social .social-item:first-child {
+        left: 0;
+    }
+
+    #home .row .col-8 .social .social-item:nth-child(2) {
+        left: 50px;
+    }
+
+    #home .row .col-8 .social .social-item:last-child {
+        right: 0;
+    }
+
+    #home .row .col-8 .social .social-item:nth-child(3) {
+        right: 50px;
+    }
+
+    #home .row .col-4 .accent-1 {
+        width: 170px;
+    }
+
+    #home .row .col-4 .img-home {
+        width: 220px;
+    }
+
+    #about {
+        margin-bottom: 300px;
+    }
+
+    .about-exp-item {
+        width: 90%;
+    }
+
+    #project {
+        margin-bottom: 870px;
+    }
+
+    .card {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #home .row .col-4 .accent-1 {
+        width: 150px;
+    }
+
+    #home .row .col-4 .img-home {
+        width: 200px;
+    }
+
+    #about {
+        margin-bottom: 350px;
+    }
+
+    .about-exp-item {
+        width: 100%;
+    }
+
+    #project {
+        margin-bottom: 800px;
+    }
+
+    .card {
+        width: 60%;
+    }
 }
